@@ -1,0 +1,1241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200&display=swap");
+:root {
+  --themebg: #e1e1e1;
+  --themewhite: #fffefe;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item5 {
+  margin-left: -7%;
+  position: relative;
+  padding: 10px;
+}
+.item5::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 6%;
+  top: 5%;
+  border-top: 8px solid black;
+  border-left: 8px solid black;
+}
+.item5::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 6%;
+  top: 5%;
+  border-top: 8px solid black;
+  border-right: 8px solid black;
+}
+
+.flex, #main header nav .searchbar, #main header nav .menu, #main header nav {
+  display: flex;
+  align-items: center;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--themebg);
+}
+#main header {
+  width: 100%;
+  position: fixed;
+  background: #000;
+  padding: 25px 0px 15px 0px;
+  z-index: 999;
+}
+#main header .logo {
+  position: absolute;
+  min-height: 50px;
+  background: var(--themewhite);
+  left: 20px;
+  top: 0px;
+  min-width: 60px;
+  text-align: center;
+  line-height: 55px;
+  transform: rotate(90deg);
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#main header nav {
+  width: 80%;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+#main header nav .menubar {
+  color: white;
+  display: none;
+  width: 10%;
+}
+#main header nav .menubar img {
+  width: 100%;
+}
+#main header nav .menu {
+  list-style: none;
+  width: 65%;
+}
+#main header nav .menu li {
+  width: 15%;
+}
+#main header nav .menu li a {
+  text-decoration: none;
+  color: var(--themewhite);
+  transition: 0.1s;
+  font-weight: 300;
+  white-space: nowrap;
+}
+#main header nav .menu li a:hover {
+  font-weight: 800;
+  color: white;
+}
+#main header nav .searchbar {
+  width: 23%;
+  border-bottom: 1.5px solid white;
+  justify-content: space-between;
+}
+#main header nav .searchbar img {
+  min-width: 30px;
+}
+#main header nav .searchbar input {
+  background: none;
+  border: none;
+  outline: none;
+  all: none;
+  color: var(--themewhite);
+  width: 90%;
+}
+#main #hero_section {
+  background-color: #ededed;
+  padding: 70px 0;
+  margin-top: 70px;
+}
+#main #hero_section .content {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#main #hero_section .content .item {
+  width: 33%;
+  min-width: 300px;
+}
+#main #hero_section .content .item h1,
+#main #hero_section .content .item h2 {
+  font-size: 7vw;
+  line-height: 75px;
+  font-weight: 900;
+}
+#main #hero_section .content .item h2 {
+  display: inline-block;
+  border-bottom: 6px solid black;
+}
+#main #hero_section .content .item h3 {
+  font-size: 1.5vw;
+  padding: 7px 0;
+}
+#main #hero_section .content .item .dog_dress img {
+  margin-left: -20px;
+  margin-top: 10px;
+}
+#main #hero_section .content .item2 {
+  margin-left: -7%;
+  position: relative;
+  padding: 10px;
+}
+#main #hero_section .content .item2::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 6%;
+  top: 5%;
+  border-top: 8px solid black;
+  border-left: 8px solid black;
+}
+#main #hero_section .content .item2::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 6%;
+  top: 5%;
+  border-top: 8px solid black;
+  border-right: 8px solid black;
+}
+#main #hero_section .content .item2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main #hero_section .content .item2 .bra::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 6%;
+  bottom: 5%;
+  border-bottom: 8px solid black;
+  border-left: 8px solid black;
+}
+#main #hero_section .content .item2 .bra::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 6%;
+  bottom: 5%;
+  border-bottom: 8px solid black;
+  border-right: 8px solid black;
+}
+#main #hero_section .content .item3 .paw {
+  position: relative;
+  text-align: right;
+}
+#main #hero_section .content .item3 .paw .spaw {
+  position: absolute;
+  top: -10%;
+  left: 15%;
+}
+#main #hero_section .content .item3 h3 {
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+  font-size: 2.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+#main #hero_section .content .item3 h3 span {
+  font-weight: 600;
+}
+#main #hero_section .content .item3 p {
+  padding-top: 20px;
+  font-size: 14px;
+}
+#main #hero_section .content .item3 a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 5px 30px;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: var(--themewhite);
+  margin-top: 10px;
+  display: inline-block;
+}
+#main #about {
+  width: 100%;
+  position: relative;
+}
+#main #about .pawa,
+#main #about .pawb {
+  position: absolute;
+}
+#main #about .pawa {
+  left: -1%;
+  bottom: 20%;
+  width: 9%;
+  transform: rotateY(180deg);
+}
+#main #about .pawb {
+  right: -3%;
+  bottom: 0;
+}
+#main #about .content {
+  width: 65%;
+  margin: auto;
+  margin-top: 15vw;
+  position: relative;
+}
+#main #about .content span {
+  width: 70px;
+  height: 7px;
+  background-color: black;
+  display: inline-block;
+}
+#main #about .content h1 {
+  font-size: 5vw;
+  line-height: 5vw;
+  font-weight: 900;
+}
+#main #about .content p {
+  padding-top: 40px;
+  line-height: 30px;
+  text-align: justify;
+  font-weight: 500;
+}
+#main #about .content .downarrow {
+  position: absolute;
+  width: 110px;
+  height: 90px;
+  background-color: var(--themewhite);
+  right: 0;
+  top: 1%;
+  border: 5px solid black;
+  font-size: 3vw;
+  text-align: center;
+  font-weight: 900;
+  transform: rotate(90deg);
+  line-height: 80px;
+}
+#main #about .content .paw {
+  text-align: right;
+  transform: translate(26%, -45%);
+}
+#main #about .content .paw img:nth-child(1) {
+  width: 15%;
+  transform: rotateY(180deg) translate(40px);
+}
+#main #about .content .paw img:nth-child(2) {
+  width: 25%;
+}
+#main #about .content #trending {
+  text-align: right;
+}
+#main #about .content #trending .img_content {
+  text-align: left;
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#main #about .content #trending .img_content .item {
+  width: 40%;
+  min-width: 250px;
+}
+#main #about .content #trending .img_content .item .top_img {
+  position: relative;
+}
+#main #about .content #trending .img_content .item .top_img::after {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  content: "";
+  border-top: 15px solid black;
+  border-left: 15px solid black;
+  top: 0;
+  left: 0;
+}
+#main #about .content #trending .img_content .item .top_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main #about .content #trending .img_content .item h2 {
+  padding-top: 20px;
+  font-weight: 900;
+}
+#main #about .content #trending .img_content .item p {
+  padding-top: 10px;
+  line-height: 25px;
+  font-weight: 500;
+}
+#main #about .content #trending .img_content .item2,
+#main #about .content #trending .img_content .item4 {
+  transform: translateY(15%);
+}
+#main #about .content #trending .learn_more {
+  text-align: center;
+  margin: 200px 0 100px 0px;
+}
+#main #about .content #trending .learn_more h6 {
+  font-weight: normal;
+  font-size: 1.5vw;
+}
+#main #lookgood {
+  background-color: var(--themewhite);
+  padding: 70px 0;
+  position: relative;
+}
+#main #lookgood .queton {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  bottom: -15%;
+  left: 10%;
+}
+#main #lookgood .queton img {
+  width: 80%;
+}
+#main #lookgood .content {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#main #lookgood .content .item {
+  width: 45%;
+  min-width: 300px;
+}
+#main #lookgood .content .item h1,
+#main #lookgood .content .item h2 {
+  font-size: 5vw;
+  line-height: 5vw;
+  font-weight: 900;
+  display: inline-block;
+}
+#main #lookgood .content .item h1 {
+  border-top: 5px solid black;
+  padding-top: 10px;
+}
+#main #lookgood .content .item h2 {
+  border-bottom: 5px solid black;
+  padding-bottom: 10px;
+}
+#main #lookgood .content .item p {
+  padding: 30px 0;
+}
+#main #lookgood .content .item1 {
+  transform: translateY(20%);
+}
+#main #lookgood .content .item1 h1,
+#main #lookgood .content .item1 h2 {
+  font-size: 5vw;
+  line-height: 5vw;
+  font-weight: 900;
+  display: inline-block;
+}
+#main #lookgood .content .item1 h1 {
+  border-top: 5px solid black;
+  padding-top: 10px;
+}
+#main #lookgood .content .item1 h2 {
+  border-bottom: 5px solid black;
+  padding-bottom: 10px;
+}
+#main #lookgood .content .item1 p {
+  padding: 30px 0;
+}
+#main #lookgood .content .item5 {
+  position: relative;
+}
+#main #lookgood .content .item5 img {
+  width: 100%;
+}
+#main #lookgood .content .item5 .dogdress {
+  width: 40%;
+  right: 0%;
+  position: absolute;
+  bottom: -10%;
+  display: flex;
+}
+#main #Frequently {
+  padding-top: 20vw;
+  position: relative;
+}
+#main #Frequently .pawa,
+#main #Frequently .pawb {
+  position: absolute;
+}
+#main #Frequently .pawa {
+  left: -2%;
+  bottom: -40%;
+  width: 12%;
+  transform: rotateY(180deg);
+}
+#main #Frequently .pawb {
+  right: 0%;
+  top: 5%;
+}
+#main #Frequently .Frequently_content {
+  width: 80%;
+  margin: 0px auto;
+}
+#main #Frequently .Frequently_content span {
+  width: 70px;
+  height: 7px;
+  background-color: black;
+  display: inline-block;
+}
+#main #Frequently .Frequently_content h1 {
+  font-size: 5vw;
+  line-height: 5vw;
+  font-weight: 900;
+}
+#main #Frequently .Frequently_content .card {
+  padding-top: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+#main #Frequently .Frequently_content .card .item {
+  width: 28%;
+}
+#main #Frequently .Frequently_content .card .item h2 {
+  font-size: 1.5vw;
+}
+#main #Frequently .Frequently_content .card .item p {
+  font-size: 1.2vw;
+  text-align: justify;
+}
+#main #testimonials {
+  position: relative;
+  padding-top: 20vw;
+  padding-bottom: 300px;
+}
+#main #testimonials .pawa,
+#main #testimonials .queton2 {
+  position: absolute;
+}
+#main #testimonials .pawa {
+  bottom: 20%;
+  width: 7%;
+  left: 35%;
+  transform: rotateY(180deg);
+}
+#main #testimonials .queton2 {
+  bottom: 5%;
+  right: 10%;
+  width: 15%;
+}
+#main #testimonials .downarrow {
+  position: absolute;
+  width: 110px;
+  height: 90px;
+  background-color: var(--themewhite);
+  right: 5%;
+  bottom: 20%;
+  border: 5px solid black;
+  font-size: 3vw;
+  text-align: center;
+  font-weight: 900;
+  transform: rotate(90deg);
+  line-height: 80px;
+  z-index: 2;
+}
+#main #testimonials .Frequently_content {
+  width: 80%;
+  margin: 0px auto;
+  position: relative;
+}
+#main #testimonials .Frequently_content span {
+  width: 70px;
+  height: 7px;
+  background-color: black;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: -5%;
+}
+#main #testimonials .Frequently_content h1 {
+  font-size: 5vw;
+  line-height: 5vw;
+  font-weight: 900;
+  text-align: right;
+}
+#main #testimonials .Frequently_content .card {
+  width: 80%;
+  margin: auto;
+  padding-top: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vw;
+}
+#main #testimonials .Frequently_content .card .item {
+  width: 28%;
+  text-align: right;
+}
+#main #testimonials .Frequently_content .card .item h2 {
+  font-size: 1.5vw;
+}
+#main #testimonials .Frequently_content .card .item p {
+  font-size: 1.4vw;
+}
+#main #Subscribe {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: var(--themewhite);
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#main #Subscribe img {
+  position: absolute;
+}
+#main #Subscribe .wpaw1 {
+  width: 20vw;
+  left: 10%;
+  bottom: 5%;
+}
+#main #Subscribe .wpaw2 {
+  width: 13vw;
+  right: -2%;
+  top: 35%;
+  transform: rotateY(180deg);
+}
+#main #Subscribe .sub_content {
+  width: 80%;
+  text-align: center;
+}
+#main #Subscribe .sub_content h1 {
+  font-size: 4vw;
+  display: inline-block;
+  border-bottom: 10px solid var(--themewhite);
+  border-top: 10px solid var(--themewhite);
+  font-weight: 900;
+}
+#main #Subscribe .sub_content p {
+  font-size: 2vw;
+  padding-top: 2vw;
+  font-weight: 400;
+}
+#main #Subscribe .sub_content input {
+  margin-top: 6vw;
+  background: none;
+  padding: 10px 50px;
+  outline: none;
+  font-size: 19px;
+  border: 1px solid var(--themewhite);
+}
+#main #Subscribe .sub_content a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: var(--themewhite);
+  width: 100px;
+  margin: 40px auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+}
+#main #footer {
+  width: 100%;
+  position: relative;
+}
+#main #footer .downarrow {
+  position: absolute;
+  width: 110px;
+  height: 90px;
+  background-color: var(--themewhite);
+  left: 3%;
+  top: 1%;
+  border: 5px solid black;
+  font-size: 3vw;
+  text-align: center;
+  font-weight: 900;
+  transform: rotate(90deg);
+  line-height: 80px;
+  z-index: 2;
+}
+#main #footer .footer_content {
+  width: 80%;
+  height: 100%;
+  border-top: 4px solid black;
+  margin: auto;
+  transform: translateY(50px);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  flex-wrap: wrap;
+}
+#main #footer .footer_content .item {
+  width: 20%;
+}
+#main #footer .footer_content .item h1 {
+  font-size: 2vw;
+}
+#main #footer .footer_content .item p {
+  color: rgb(158, 158, 158);
+  padding: 5px 0;
+}
+#main #footer h6 {
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 50px 0;
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+@media (max-width: 1110px) {
+  #main header nav .menubar {
+    color: white;
+    display: none;
+  }
+  #main header nav .menu {
+    margin-left: 2vw;
+  }
+  #main header nav .menu li {
+    width: 20%;
+  }
+  #main header nav .menu li a {
+    font-size: 2vw;
+  }
+  #main #hero_section .content .item {
+    width: 50%;
+  }
+  #main #hero_section .content .item h1,
+  #main #hero_section .content .item h2 {
+    font-size: 12vw;
+    line-height: 100px;
+  }
+  #main #hero_section .content .item h3 {
+    font-size: 3vw;
+  }
+  #main #hero_section .content .item .dog_dress img {
+    width: 50%;
+  }
+  #main #hero_section .content .item3 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #main #hero_section .content .item3 .paw img {
+    width: 30vw;
+  }
+  #main #hero_section .content .item3 .paw .spaw {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 15vw;
+  }
+  #main #hero_section .content .item3 h3 {
+    margin: 20px 0;
+    font-size: 5.5vw;
+  }
+  #main #hero_section .content .item3 h3 span {
+    font-weight: 600;
+  }
+  #main #hero_section .content .item3 p {
+    font-size: 3vw;
+  }
+  #main #hero_section .content .item3 a {
+    font-size: 3vw;
+  }
+  #main #about .content {
+    width: 80%;
+  }
+  #main #about .content h1 {
+    font-size: 6vw;
+    line-height: 70px;
+  }
+  #main #about .content p {
+    line-height: 40px;
+    font-size: 3vw;
+  }
+  #main #about .content .downarrow {
+    right: 0;
+    top: 1%;
+    border: 5px solid black;
+    font-size: 4vw;
+  }
+  #main #about .content .paw {
+    text-align: right;
+    transform: translate(26%, -25%);
+  }
+  #main #about .content .paw img:nth-child(1) {
+    width: 20%;
+  }
+  #main #about .content .paw img:nth-child(2) {
+    width: 30%;
+  }
+  #main #about .content #trending {
+    text-align: right;
+  }
+  #main #about .content #trending .img_content .item {
+    width: 45%;
+    min-width: 250px;
+  }
+  #main #about .content #trending .img_content .item h2 {
+    font-size: 3vw;
+  }
+  #main #about .content #trending .img_content .item p {
+    padding-top: 10px;
+    line-height: 40px;
+    text-align: left;
+    font-weight: 500;
+  }
+  #main #about .content #trending .learn_more {
+    text-align: center;
+    margin: 200px 0 100px 0px;
+  }
+  #main #about .content #trending .learn_more h6 {
+    font-weight: normal;
+    font-size: 3.5vw;
+  }
+  #main #lookgood .queton img {
+    width: 50%;
+  }
+  #main #lookgood .content {
+    flex-wrap: wrap;
+  }
+  #main #lookgood .content .item {
+    width: 50%;
+    min-width: 300px;
+  }
+  #main #lookgood .content .item h1,
+  #main #lookgood .content .item h2 {
+    font-size: 6vw;
+    line-height: 70px;
+  }
+  #main #lookgood .content .item p {
+    font-size: 2.5vw;
+  }
+  #main #lookgood .content .item5 .dogdress {
+    right: 15%;
+  }
+  #main #Frequently .pawa {
+    width: 20%;
+  }
+  #main #Frequently .pawb {
+    top: 10%;
+    right: -18% !important;
+  }
+  #main #Frequently .Frequently_content {
+    width: 80%;
+    margin: 0px auto;
+  }
+  #main #Frequently .Frequently_content .Frequently_content h1 {
+    font-size: 6vw;
+    line-height: 70px;
+  }
+  #main #Frequently .Frequently_content .Frequently_content .card .item {
+    width: 45%;
+    min-width: 250px;
+  }
+  #main #Frequently .Frequently_content .Frequently_content .card .item h2 {
+    font-size: 3vw;
+  }
+  #main #Frequently .Frequently_content .Frequently_content .card .item p {
+    font-size: 2.5vw;
+  }
+  #main #testimonials .pawa {
+    bottom: 10%;
+    width: 20%;
+    left: 30%;
+  }
+  #main #testimonials .queton2 {
+    bottom: 3%;
+    right: 10%;
+    width: 30vw;
+  }
+  #main #testimonials .downarrow {
+    right: 5%;
+    bottom: 10%;
+    border: 5px solid black;
+    font-size: 7vw;
+    text-align: center;
+    font-weight: 900;
+    transform: rotate(90deg);
+    line-height: 80px;
+    z-index: 2;
+  }
+  #main #testimonials .Frequently_content {
+    width: 80%;
+    margin: 0px auto;
+  }
+  #main #testimonials .Frequently_content h1 {
+    font-size: 6vw;
+    line-height: 70px;
+  }
+  #main #testimonials .Frequently_content .card .item {
+    width: 45%;
+    min-width: 250px;
+  }
+  #main #testimonials .Frequently_content .card .item h2 {
+    font-size: 3vw;
+  }
+  #main #testimonials .Frequently_content .card .item p {
+    font-size: 2.5vw;
+  }
+  #main #Subscribe .wpaw1 {
+    width: 30vw;
+    left: 10%;
+    bottom: 15%;
+  }
+  #main #Subscribe .wpaw2 {
+    width: 15vw;
+    right: -2%;
+    top: 35%;
+  }
+  #main #Subscribe .sub_content h1 {
+    font-size: 6vw;
+  }
+  #main #Subscribe .sub_content p {
+    font-size: 3vw;
+  }
+  #main #Subscribe .sub_content input {
+    margin-top: 8vw;
+    background: none;
+    font-size: 3vw;
+  }
+  #main #Subscribe .sub_content a {
+    width: 20vw;
+    margin: 60px auto;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 3vw;
+  }
+  #main #footer {
+    width: 100%;
+    position: relative;
+  }
+  #main #footer .downarrow {
+    font-size: 8vw;
+  }
+  #main #footer .footer_content .item {
+    width: 40%;
+  }
+  #main #footer .footer_content .item h1 {
+    font-size: 4vw;
+  }
+  #main #footer .footer_content .item p {
+    font-size: 2vw;
+  }
+  #main #footer h6 {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  #main header nav {
+    justify-content: space-between;
+  }
+  #main header nav .menubar {
+    color: white;
+    display: none;
+  }
+  #main header nav .menubar {
+    color: white;
+    display: block;
+    order: 1;
+    z-index: 5;
+  }
+  #main header nav .menu {
+    transition: 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+    list-style: none;
+    width: 110%;
+    height: 100vh;
+    position: fixed;
+    left: 105%;
+    top: 0;
+    order: 2;
+    z-index: 4;
+    background: rgb(0, 0, 0);
+    flex-direction: column;
+    justify-content: center;
+  }
+  #main header nav .menu li {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  #main header nav .menu li a {
+    text-decoration: none;
+    color: var(--themewhite);
+    transition: 0.3s;
+    font-weight: 300;
+    white-space: nowrap;
+    font-size: 8vw;
+    font-weight: 800;
+  }
+  #main header nav .menu li a:hover {
+    font-weight: 800;
+    color: white;
+  }
+  #main header nav .searchbar {
+    width: 50%;
+    margin-left: 20vw;
+  }
+  #main header nav .searchbar input {
+    background: none;
+    border: none;
+    outline: none;
+    all: none;
+    color: var(--themewhite);
+    width: 90%;
+  }
+  #main #hero_section {
+    padding: 70px 0;
+  }
+  #main #hero_section .content {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #main #hero_section .content .item {
+    width: 100%;
+    min-width: unset;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  #main #hero_section .content .item h1,
+  #main #hero_section .content .item h2 {
+    font-size: 25vw;
+    line-height: 20vw;
+  }
+  #main #hero_section .content .item h3 {
+    font-size: 5.5vw;
+  }
+  #main #hero_section .content .item .dog_dress img {
+    width: 50%;
+  }
+  #main #hero_section .content .item2 {
+    margin-left: unset;
+  }
+  #main #hero_section .content .item2::after {
+    content: "";
+    border-top: 20px solid black;
+    border-left: 20px solid black;
+  }
+  #main #hero_section .content .item2::before {
+    border-top: 20px solid black;
+    border-right: 20px solid black;
+  }
+  #main #hero_section .content .item2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #main #hero_section .content .item2 .bra::after {
+    border-bottom: 20px solid black;
+    border-left: 20px solid black;
+  }
+  #main #hero_section .content .item2 .bra::before {
+    border-bottom: 20px solid black;
+    border-right: 20px solid black;
+  }
+  #main #hero_section .content .item3 .paw {
+    position: relative;
+    text-align: right;
+  }
+  #main #hero_section .content .item3 .paw .spaw {
+    position: absolute;
+    top: -10%;
+    left: 15%;
+  }
+  #main #hero_section .content .item3 h3 {
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    font-size: 5.5vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: 16px;
+  }
+  #main #hero_section .content .item3 h3 span {
+    font-weight: 600;
+  }
+  #main #hero_section .content .item3 p {
+    font-size: 6vw;
+  }
+  #main #hero_section .content .item3 a {
+    font-size: 4vw;
+  }
+  #main #about .pawa,
+  #main #about .pawb {
+    position: absolute;
+  }
+  #main #about .pawa {
+    left: -1%;
+    bottom: 20%;
+    width: 15%;
+    transform: rotateY(180deg);
+  }
+  #main #about .pawb {
+    bottom: 2%;
+  }
+  #main #about .content {
+    width: 80%;
+  }
+  #main #about .content h1 {
+    font-size: 8vw;
+    line-height: 10vw;
+  }
+  #main #about .content p {
+    line-height: 8vw;
+    font-size: 6vw;
+  }
+  #main #about .content .downarrow {
+    right: -2%;
+    top: 1%;
+    border: 5px solid black;
+    font-size: 7vw;
+    width: 70px;
+    height: 50px;
+    line-height: 45px;
+  }
+  #main #about .content .paw {
+    text-align: right;
+    transform: translate(26%, -25%);
+  }
+  #main #about .content .paw img:nth-child(1) {
+    width: 20%;
+  }
+  #main #about .content .paw img:nth-child(2) {
+    width: 30%;
+  }
+  #main #about .content #trending {
+    text-align: right;
+  }
+  #main #about .content #trending .img_content .item {
+    margin-bottom: 15vw;
+    width: 100%;
+    min-width: 250px;
+  }
+  #main #about .content #trending .img_content .item h2 {
+    font-size: 6vw;
+  }
+  #main #about .content #trending .img_content .item p {
+    line-height: 6vw;
+    font-size: 5vw;
+  }
+  #main #about .content #trending .learn_more {
+    text-align: center;
+  }
+  #main #about .content #trending .learn_more h6 {
+    font-weight: normal;
+    font-size: 5vw;
+  }
+  #main #lookgood .queton {
+    bottom: -5%;
+    left: 10%;
+  }
+  #main #lookgood .queton img {
+    width: 50%;
+  }
+  #main #lookgood .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #main #lookgood .content .item {
+    width: 100%;
+  }
+  #main #lookgood .content .item h1,
+  #main #lookgood .content .item h2 {
+    font-size: 8vw !important;
+    line-height: 8vw !important;
+    display: block;
+  }
+  #main #lookgood .content .item p {
+    font-size: 5vw;
+  }
+  #main #lookgood .content .item1 {
+    transform: translateY(0%);
+  }
+  #main #lookgood .content .item5 .dogdress {
+    width: 50%;
+    right: 0%;
+    bottom: -10%;
+  }
+  #main #Frequently .pawa {
+    width: 25vw;
+  }
+  #main #Frequently .pawb {
+    right: -4% !important;
+    top: 10%;
+    width: 25vw !important;
+  }
+  #main #Frequently .Frequently_content {
+    width: 80%;
+  }
+  #main #Frequently .Frequently_content h1 {
+    font-size: 8vw;
+    line-height: 9vw;
+  }
+  #main #Frequently .Frequently_content .card {
+    width: 100% !important;
+  }
+  #main #Frequently .Frequently_content .card .item {
+    width: 100%;
+    min-width: 250px;
+    padding-bottom: 7vw !important;
+  }
+  #main #Frequently .Frequently_content .card .item h2 {
+    font-size: 6vw;
+    line-height: 7vw;
+  }
+  #main #Frequently .Frequently_content .card .item p {
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+  #main #testimonials .Frequently_content {
+    width: 80%;
+  }
+  #main #testimonials .Frequently_content h1 {
+    font-size: 8vw;
+    line-height: 9vw;
+  }
+  #main #testimonials .Frequently_content .card .item {
+    width: 100%;
+    min-width: 250px;
+    padding-bottom: 7vw !important;
+  }
+  #main #testimonials .Frequently_content .card .item h2 {
+    font-size: 6vw;
+    line-height: 7vw;
+  }
+  #main #testimonials .Frequently_content .card .item p {
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+  #main #Subscribe .wpaw1 {
+    width: 40vw;
+    left: 10%;
+    bottom: 15%;
+  }
+  #main #Subscribe .wpaw2 {
+    width: 20vw;
+    right: -2%;
+    top: 85%;
+  }
+  #main #Subscribe .sub_content h1 {
+    font-size: 8vw;
+  }
+  #main #Subscribe .sub_content p {
+    font-size: 5vw;
+    margin-top: 10vw;
+  }
+  #main #Subscribe .sub_content input {
+    margin-top: 10vw;
+    font-size: 4vw;
+  }
+  #main #Subscribe .sub_content a {
+    width: 30vw;
+    margin: 70px auto;
+    font-size: 5vw;
+    z-index: 5;
+  }
+  #main #footer {
+    width: 100%;
+    position: relative;
+  }
+  #main #footer .footer_content .item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4vw;
+  }
+  #main #footer .footer_content .item h1 {
+    font-size: 8vw;
+  }
+  #main #footer .footer_content .item p {
+    font-size: 5vw;
+  }
+  #main #footer h6 {
+    font-size: 4vw;
+  }
+}
+.slide {
+  left: -5% !important;
+}/*# sourceMappingURL=style.css.map */
